@@ -18,7 +18,7 @@ MinhasFinancasApp é uma aplicação frontend ainda em desenvolvimento para gere
 
 ### Executar Aplicação
 
-- Clone o repositório do DSList: git clone <https://github.com/jsidegum/minhasfinancas-app>
+- Clone o repositório do minhasfinancas-app: git clone <https://github.com/jsidegum/minhasfinancas-app>
 - Instalar as dependencias (yarn install)
 - Execute a aplicação (yarn start)
 - Para executar o back-end seguir orientação do Readme de "<https://github.com/jsidegum/minhasfinancas-api>"
