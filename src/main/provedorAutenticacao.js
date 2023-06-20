@@ -23,14 +23,27 @@ class ProvedorAutenticacao extends Component {
             nome: claims.nome,
         }
 
-        ApiService.registarToken(token);
-        AuthService.logar(usuario);
+        AuthService.logar(usuario, token);
         this.setState({ isAutenticado: true, usuarioAutenticado: usuario });
     }
 
     encerrarSessao = () => {
         AuthService.removerUsuarioAutenticado();
         this.setState({ isAutenticado: false, usuarioAutenticado: null });
+    }
+
+    componentDidMount() {
+        const isAutenticado = AuthService.isUsuarioAutenticado();
+
+        if (isAutenticado) {
+            const usuario = AuthService.refreshSession();
+
+            this.setState({
+                isAutenticado: true,
+                usuarioAutenticado: usuario,
+            })
+        }
+
     }
 
     render() {
