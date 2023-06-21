@@ -55,7 +55,7 @@ class CadastroUsuario extends React.Component {
         return (
 
             <div className="row">
-                <div className="col-md-6" style={{ position: 'relative', left: '300px' }}>
+                <div className="col-md-6 offset-md-3">
                     <div className="bs-docs-section"></div>
                     <div>
                         <Card title='Cadastro de Usuário'>
@@ -100,6 +100,7 @@ class CadastroUsuario extends React.Component {
                                 />
                             </FormGroup>
 
+                            <br />
                             <button onClick={this.cadastrar} className="btn btn-success">Salvar</button>
                             <button onClick={this.cancelar} className="btn btn-danger">Cancelar</button>
 

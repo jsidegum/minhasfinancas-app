@@ -196,7 +196,7 @@ class CadastroLancamento extends Component {
 
                 <div className="row">
                     <div className="col-md-6">
-
+                        <br />
                         {
                             this.state.atualizando ?
                                 <button onClick={this.atualizar} className="btn btn-success">Atualizar</button> :

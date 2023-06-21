@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { FaEdit, FaTrash, FaCheck, FaTimes } from 'react-icons/fa';
 
 class LancamentoTable extends Component {
 
@@ -15,10 +16,14 @@ class LancamentoTable extends Component {
                     <td>{lanc.mes}</td>
                     <td>{lanc.status}</td>
                     <td>
-                        <button type="button" className="btn btn-success" onClick={e => this.props.handleAlterarStatus(lanc, "EFETIVADO")} disabled={lanc.status !== "PENDENTE"}>Efetivar</button>
-                        <button type="button" className="btn btn-warning" onClick={e => this.props.handleAlterarStatus(lanc, "CANCELADO")} disabled={lanc.status !== "PENDENTE"}>Cancelar</button>
-                        <button type="button" className="btn btn-primary" onClick={e => this.props.handleEditar(lanc.id)} >Editar</button>
-                        <button type="button" className="btn btn-danger" onClick={e => this.props.handleDeletar(lanc)}>Deletar</button>
+                        <button type="button" className="btn btn-success" onClick={e => this.props.handleAlterarStatus(lanc, "EFETIVADO")} disabled={lanc.status !== "PENDENTE"}><FaCheck /></button>
+                        <button type="button" className="btn btn-warning" onClick={e => this.props.handleAlterarStatus(lanc, "CANCELADO")} disabled={lanc.status !== "PENDENTE"}><FaTimes /></button>
+                        <button type="button" className="btn btn-primary" onClick={e => this.props.handleEditar(lanc.id)} ><FaEdit /></button>
+                        <button type="button" className="btn btn-danger" onClick={e => this.props.handleDeletar(lanc)}><FaTrash /></button>
+
+
+
+
                         {/* <button type="button" className="btn btn-primary" onClick={e => this.props.handleAlterarStatus(lanc, "PENDENTE")}>Pendente</button> */}
                     </td>
                 </tr>

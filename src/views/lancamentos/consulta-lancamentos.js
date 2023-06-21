@@ -155,6 +155,7 @@ class ConsultaLancamentos extends Component {
                                         onChange={e => this.setState({ tipo: e.target.value })}
                                     />
                                 </FormGroup>
+                                <br />
                                 <button onClick={this.buscar} type="button" className="btn btn-success" >Buscar</button>
                                 <button onClick={this.prepareCadastrar} type="button" className="btn btn-danger">Cadastrar</button>
 
