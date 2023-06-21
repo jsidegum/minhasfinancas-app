@@ -10,10 +10,13 @@ class AuthService {
     static isUsuarioAutenticado() {
         const token = LocalStorageService.obterItem(TOKEN);
         const decodeToken = jwt.decode(token);
-        const expiration = decodeToken.exp;
-        const isTokenInvalido = Date.now() > (expiration * 1000);
 
-        return !isTokenInvalido;
+        if (decodeToken !== null) {
+            const expiration = decodeToken.exp;
+            const isTokenInvalido = Date.now() > (expiration * 1000);
+            return !isTokenInvalido;
+        }
+
     }
 
     static removerUsuarioAutenticado() {
