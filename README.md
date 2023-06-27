@@ -1,15 +1,22 @@
 # Sobre o Projeto
 
-MinhasFinancasApp é uma aplicação frontend ainda em desenvolvimento para gerenciamento de finanças pessoais.
+MinhasFinancasApp é uma aplicação para gerenciamento de finanças pessoais, desenvolvido durante as aulas do curso "Spring Boot + React JS: Desenvolva Aplicações Web Completas" da Uddemy.
+
+API: <https://github.com/jsidegum/minhasfinancas-api>
 
 ## Técnlogias Utilizadas
 
 - ReactJS
 - Bootstrap
+- Axios
 
 ## Screenshots
 
-## Executando o projeto front-end localmente
+<img src="/public/images/cadastro-usuarios.png" style="width:700px;"/><br/>
+<img src="/public/images/login.png" style="width:700px;"/><br/>
+<img src="/public/images/home.png" style="width:700px;"/><br/>
+<img src="/public/images/cadastro-lancamento.png" style="width:700px;"/><br/>
+<img src="/public/images/consulta-lancamentos.png" style="width:700px;"/><br/>
 
 ### Pré-requisitos
 
